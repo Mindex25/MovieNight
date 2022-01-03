@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/list_contact_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_username"/>
+
+    <CheckBox
+        android:id="@+id/invite_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/list_contact_string"
+        app:srcCompat="@drawable/ic_baseline_person_add_alt_1_24"
+        android:textColor="@color/white"
+        app:backgroundTint="#FF4444" />
+
+
+
+
+
+</RelativeLayout>

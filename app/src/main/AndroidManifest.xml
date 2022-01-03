@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.movienight">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MovieNight"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Prenium.SubscriptionDetail"></activity>
+        <activity android:name=".MovieSessions.Matches"></activity>
+        <activity android:name=".MovieSessions.SwipingPage" />
+        <activity android:name=".MovieSessions.MovieSessionDetail" />
+        <activity android:name=".MovieSessions.MovieSessionCreate" />
+        <activity
+            android:name=".Authentification.Logged"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".Authentification.Login"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".Authentification.Signup"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4564171991079288~1622719966" />
+    </application>
+
+</manifest>

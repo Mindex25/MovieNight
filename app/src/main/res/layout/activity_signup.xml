@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentification.Login">
+
+    <EditText
+        android:id="@+id/sinscrire_nom"
+        android:layout_width="311dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="12dp"
+        android:autofillHints="name"
+        android:backgroundTint="#FFFF4444"
+        android:ems="10"
+        android:hint="@string/nom"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/login_courriel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/sinscrire_mdp"
+        android:layout_width="311dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="12dp"
+        android:autofillHints="password"
+        android:backgroundTint="#FFFF4444"
+        android:ems="10"
+        android:hint="@string/mot_de_passe"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/sinscrire_mdp_conf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/sinscrire_mdp_conf"
+        android:layout_width="311dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="@string/confirmer_le_mot_de_passe"
+        android:inputType="textPassword"
+        android:backgroundTint="#FFFF4444"
+        app:layout_constraintBottom_toTopOf="@+id/sinscrire_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="password" />
+
+    <EditText
+        android:id="@+id/login_courriel"
+        android:layout_width="311dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="@string/adresse_courriel"
+        android:inputType="textPersonName"
+        android:backgroundTint="#FFFF4444"
+        app:layout_constraintBottom_toTopOf="@+id/sinscrire_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="email" />
+
+    <Button
+        android:id="@+id/sinscrire_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/cr_er_mon_compte"
+        app:backgroundTint="#FFFF4444"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/sinscrire_deja_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.931" />
+
+    <TextView
+        android:id="@+id/inscription_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:text="@string/inscription"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/login_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/sinscrire_deja_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/vous_avez_d_j_un_compte_connectez_vous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
